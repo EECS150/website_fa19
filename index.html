@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Introduction to Digital Design and Integrated Circuits</title>
+    <meta name="description" content="Introduction to Digital Design and Integrated Circuits">
+
+    <link rel="stylesheet" href="assets/main.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <link rel="canonical" href="http://inst.eecs.berkeley.edu/~eecs151/fa19/">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Bitter:400,400i,700" rel="stylesheet">
+  </head>
+
+
+  <body>
+    <header class="site-header">
+      <div class="wrapper">
+        <a class="site-title" href="./index.html">EECS 151/251A, Fall 2019</a>
+
+        <nav class="site-nav">
+          <a class="page-link" href="#course-outline">Outline</a>
+          <a class="page-link" href="#resources">Resources</a>
+          <a class="page-link" href="https://piazza.com/berkeley/spring2019/eecs151251a">Piazza</a>
+          <a class="page-link" href="https://www.gradescope.com/courses/36152">Gradescope</a>
+          <a class="page-link" href="http://inst.eecs.berkeley.edu/~eecs151/">Archives</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+          <header class="post-header">
+            <h1 class="post-title">Introduction to Digital Design and Integrated Circuits</h1>
+          </header>
+
+        <div class="post-content">
+          <h2 id="letures-labs-office-hours">Letures, Labs, Office Hours</h2>
+          <table>
+            <tbody>
+              <tr>
+                <td>Lectures</td>
+                <td>Mon, Wed</td>
+                <td>2:30 pm - 4:00 pm</td>
+                <td>540AB Cory</td>
+                <td>Borivoje Nikolic and Sophia Shao</td>
+              </tr>
+              <tr>
+                <td>Discussion</td>
+                <td>Fri</td>
+                <td>10:00 am - 11:00 am</td>
+                <td>521 Cory</td>
+                <td>Vighnesh Iyer</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>Mon</td>
+                <td>1:00 pm - 2:00 pm</td>
+                <td>540AB Cory</td>
+                <td>Cem Yalcin</td>
+              </tr>
+              <tr>
+                <td>ASIC Lab</td>
+                <td>Fri</td>
+                <td>11:00 am - 2:00 pm</td>
+                <td>125 Cory</td>
+                <td>Cem Yalcin</td>
+              </tr>
+              <tr>
+                <td>FPGA Labs</td>
+                <td>Mon</td>
+                <td>8:00 am - 11:00 am</td>
+                <td>125 Cory</td>
+                <td>Ryan Kaveh</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>Tue</td>
+                <td>8:00 am - 11:00 am</td>
+                <td>125 Cory</td>
+                <td>Vighnesh Iyer</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>Thu</td>
+                <td>5:00 pm - 8:00 pm</td>
+                <td>125 Cory</td>
+                <td>Rebekah Zhao</td>
+              </tr>
+              <tr>
+                <td>Office Hours</td>
+                <td>Mon</td>
+                <td>11:00 am - 12:00 pm</td>
+                <td>509 Cory</td>
+                <td>Borivoje Nikolic</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>Tue</td>
+                <td>10:00 am - 11:00 am</td>
+                <td>125 Cory</td>
+                <td>Cem Yalcin</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>Wed</td>
+                <td>11:00 am - 12:00 pm</td>
+                <td>570 Cory</td>
+                <td>Sophia Shao</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>Wed</td>
+                <td>4:00pm - 5:00 pm</td>
+                <td>125 Cory</td>
+                <td>Vighnesh Iyer</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>Thu</td>
+                <td>3:00 pm - 4:00 pm</td>
+                <td>125 Cory</td>
+                <td>Ryan Kaveh</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>Fri</td>
+                <td>2:00 pm - 3:00 pm</td>
+                <td>125 Cory</td>
+                <td>Rebekah Zhao</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h2 id="discussions-homework">Discussions, Homework</h2>
+
+          <ul>
+            <li>Ask questions on <a href="https://piazza.com/berkeley/fall2019/eecs151251a">our Piazza forum</a>.</li>
+            <li>Homeworks will be posted as links in the <a href="#course-outline">outline</a> below and announced on Piazza. Please submit completed homework <a href="https://www.gradescope.com/courses/36152">via Gradescope</a>. See Piazza for the entry code.</li>
+          </ul>
+
+          <h2 id="course-outline">Course Outline</h2>
+          <ul>
+            <li><a href="https://www.youtube.com/playlist?list=PLW6lmkTQ3FQVyMbSHpXyaGK9GvDEsr0mm">Webcast playlist</a></li>
+            <li><a href="https://www.youtube.com/channel/UCeEgTNbyPoP_dSnSuQWv2cA/live">Webcast livestream</a></li>
+            <li><a href="https://docs.google.com/spreadsheets/d/16EXtEjz7dTznBETQbKZQJfa0umseIecIqQKKz1YR69Y/edit#gid=0">Question/Checkoff Queue</a></li>
+          </ul>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Week</th>
+                <th>Date</th>
+                <th>Lecture Topic</th>
+                <th>Discussion</th>
+                <th>ASIC Lab</th>
+                <th>FPGA Lab</th>
+                <th>Homework</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>8/28</td>
+                <td>Class Organization &amp; Introduction to Course Content
+                  <a href="https://drive.google.com/file/d/1eXI4adHS2nL8vwzQr7b_GVfL_cJlgiwn/view?usp=sharing">slides</a>
+                  <a href="https://www.youtube.com/watch?v=N2mIpXF4DKA&amp;list=PLW6lmkTQ3FQVyMbSHpXyaGK9GvDEsr0mm&amp;index=2&amp;t=0s">webcast</a>
+                </td>
+                <td><a href="https://github.com/EECS150/disc_fa19/blob/master/disc1/disc1.pdf">Discussion 1 (Intro)</a></td>
+                <td><a href="files/asic_labs/asic_lab1.pdf">Lab 1 (Getting Around the Compute Environment)</a></td>
+                <td><a href="https://github.com/EECS150/fpga_labs_fa19/raw/master/lab1/spec/lab1_spec.pdf">Lab 1 (Setup Accounts, Verilog Intro, FPGA Basics)</a></td>
+                <td>No homework!</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>9/4</td>
+                <td>Design Process
+                  <a href="https://drive.google.com/file/d/1sIp9VhLzil7AhLWB1iMhfRfpdHu9Bpqr/view?usp=sharing">slides</a>
+                  <a href="https://www.youtube.com/watch?v=cCVlE69pYbw&amp;list=PLW6lmkTQ3FQVyMbSHpXyaGK9GvDEsr0mm&amp;index=2">webcast</a></td>
+                <td><a href="https://github.com/EECS150/disc_fa19/blob/master/disc2/disc2.pdf">Discussion 2 (Noise Margins, Verilog, Simulation)</a> <a href="https://github.com/EECS150/disc_fa19/tree/master/disc2/verilog">code</a></td>
+                <td><a href="./files/asic_labs/asic_lab2.pdf">Lab 2 (Simulation)</a></td>
+                <td><a href="https://github.com/EECS150/fpga_labs_fa19/raw/master/lab2/spec/lab2_spec.pdf">Lab 2 (Introduction to FPGA Development)</a></td>
+                <td><a href="./files/homework/hw1.pdf">HW 1</a></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>9/9</td>
+                <td>Verilog I
+                  <a href="https://drive.google.com/file/d/1Q0AccWIoHfoe5EEJ2mno5koAoOuHhfcE/view?usp=sharing">slides</a>
+                  <a href="https://www.youtube.com/watch?v=X9xLqem9BW0&amp;list=PLW6lmkTQ3FQVyMbSHpXyaGK9GvDEsr0mm&amp;index=4&amp;t=0s">webcast</a>
+                </td>
+                <td><a href="https://github.com/EECS150/disc_fa19/blob/master/disc3/disc3.pdf">Discussion 3 (Verilog Simulation, Parameterized Modules)</a> <a href="https://github.com/EECS150/disc_fa19/tree/master/disc3/verilog">code</a></td>
+                <td><a href="./files/asic_labs/asic_lab3.pdf">Lab 3 (Logic Synthesis)</a></td>
+                <td><a href="https://github.com/EECS150/fpga_labs_fa19/blob/master/lab3/spec/lab3_spec.pdf">Lab 3 (Tone Generator, Simulation, Connecting Modules)</a></td>
+                <td><a href="./files/homework/hw2.pdf">HW 2</a></td>
+              </tr>
+              <tr>
+                <td> </td>
+                <td>9/11</td>
+                <td>Verilog II
+                  <a href="https://drive.google.com/file/d/1Y6oEfWSha7JBI-lrFsoXDe0IDRZlqoAK/view?usp=sharing">slides</a>
+                  <a href="https://www.youtube.com/watch?v=ePy_aN5fmm8&amp;list=PLW6lmkTQ3FQVyMbSHpXyaGK9GvDEsr0mm&amp;index=5&amp;t=0s">webcast</a></td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>9/16</td>
+                <td>Combinational Logic
+                  <a href="https://drive.google.com/file/d/10TdNsXktOi3sDjhMIkjEFTW8_Z1J10Kf/view?usp=sharing">slides</a>
+                  <a href="https://www.youtube.com/watch?v=ovQAJ-AxILo&amp;list=PLW6lmkTQ3FQVyMbSHpXyaGK9GvDEsr0mm&amp;index=6&amp;t=0s">webcast</a></td>
+                <td><a href="https://github.com/EECS150/disc_fa19/blob/master/disc4.pdf">Discussion 4 (K-Maps, Logic Minimization, FSMs)</a></td>
+                <td><a href="./files/asic_labs/asic_lab4.pdf">Lab 4 (Floorplanning, Placement, and Power)</a></td>
+                <td><a href="https://github.com/EECS150/fpga_labs_fa19/blob/master/lab4/spec/lab4_spec.pdf">Lab 4 (ROMs and IO Circuits)</a></td>
+                <td><a href="./files/homework/hw3.pdf">HW 3</a></td>
+              </tr>
+              <tr>
+                <td> </td>
+                <td>9/18</td>
+                <td>FSMs
+                  <a href="https://drive.google.com/file/d/10eamjzwVHzVDeGTeF1eVzHG5KElSvaos/view?usp=sharing">slides</a>
+                  <a href="https://www.youtube.com/watch?v=eygP-y3D0sY&list=PLW6lmkTQ3FQVyMbSHpXyaGK9GvDEsr0mm&index=7&t=0s">webcast</a></td>
+                </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>9/23</td>
+                <td>FSMs 2
+                  <a href="https://drive.google.com/file/d/1gFs5x1EuWpOajG13SVGXdb0w7eX6-_qs/view?usp=sharing">slides</a>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h2 id="resources">Resources</h2>
+          <h3 id="textbooks">Textbooks</h3>
+
+          <ul>
+            <li><strong>Recommended</strong> <a href="http://search.ebscohost.com/login.aspx?direct=true&amp;db=cat04202a&amp;AN=ucb.b20752882&amp;site=eds-live&amp;authtype=ip,guest&amp;custid=s1226370&amp;groupid=main&amp;profile=eds">Digital Design and Computer Architecture</a>, 2nd ed, David Money Harris &amp; Sarah L. Harris</li>
+            <li><strong>Recommended</strong> <a href="http://search.ebscohost.com/login.aspx?direct=true&amp;db=cat04202a&amp;AN=ucb.b15897583&amp;site=eds-live&amp;authtype=ip,guest&amp;custid=s1226370&amp;groupid=main&amp;profile=eds">Digital Integrated Circuits: A Design Perspective</a>, Jan M. Rabaey, Anantha Chandrakasan, Borivoje Nikolić</li>
+            <li><strong>Useful</strong> <a href="https://www.amazon.com/dp/0321547748/ref=cm_sw_em_r_mt_dp_U_ui6rCbRX2GR88">CMOS VLSI Design</a>, Neil Weste, David Harris</li>
+          </ul>
+
+          <h3 id="verilog">Verilog</h3>
+
+          <ul>
+            <li><a href="files/verilog/Verilog_Primer_Slides.pdf">Verilog Primer Slides</a></li>
+            <li><a href="files/verilog/wire_vs_reg.pdf">wire vs reg</a>, from the CS150 Spring 2009 class.</li>
+            <li><a href="files/verilog/always_at_blocks.pdf">always@ blocks</a>, from the CS150 Fall 2009 class.</li>
+            <li><a href="files/verilog/verilog_fsm.pdf">FSMs in Verilog</a></li>
+            <li><a href="files/verilog/ready_valid_interface.pdf">Ready-Valid Interfaces</a></li>
+          </ul>
+
+          <h3 id="protocols--standards">Protocols &amp; Standards</h3>
+
+          <ul>
+            <li><a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=1620780">IEEE Verilog</a></li>
+            <li><a href="http://www-inst.eecs.berkeley.edu/~cs150/fa13/resources/I2C_BUS_SPECIFICATION_3.pdf">I2C Bus</a></li>
+            <li><a href="http://www-inst.eecs.berkeley.edu/~cs150/fa13/resources/MAX3233E-MAX3235E.pdf">RS-232</a></li>
+          </ul>
+
+          <h2 id="staff">Staff</h2>
+
+          <table>
+            <tbody>
+              <tr>
+                <td><img src="img/bora.jpg" alt="bora photo" style="width:100px;"/></td>
+                <td>Borivoje Nikolic</td>
+                <td>bora at berkeley dot edu</td>
+              </tr>
+              <tr>
+                <td><img src="img/sophia.jpg" alt="sophia photo" style="width:100px;"/></td>
+                <td>Sophia Shao</td>
+                <td>ysshao at berkeley dot edu</td>
+              </tr>
+              <tr>
+                <td><img src="img/vighnesh.jpg" alt="vighnesh photo" style="width:100px;"/></td>
+                <td>Vighnesh Iyer</td>
+                <td>vighnesh.iyer at berkeley dot edu</td>
+              </tr>
+              <tr>
+                <td><img src="img/Rebekah.jpg" style="width:100px;" /></td>
+                <td>Rebekah Zhao</td>
+                <td>rebekah_zhao at berkeley dot edu</td>
+              </tr>
+              <tr>
+                <td><img src="img/ryan.jpg" alt="ryan photo" style="width:100px;"/></td>
+                <td>Ryan Kaveh</td>
+                <td>ryankaveh at berkeley dot edu</td>
+              </tr>
+              <tr>
+                <td><img src="img/cem.jpg" alt="cem photo" style="width:100px;"/></td>
+                <td>Cem Yalcin</td>
+                <td>cemyalcin at berkeley dot edu</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h2 id="homework-policy">Homework Policy</h2>
+
+          <p>Homework will be released on Thursdays before midnight, and will be due next Friday 8 days later. Homework will be challenging and graded for correctness.</p>
+
+          <h2 id="grading">Grading</h2>
+
+          <h3 id="class">Class</h3>
+
+          <table>
+            <tbody>
+              <tr>
+                <td>Problem Sets</td>
+                <td>20%</td>
+              </tr>
+              <tr>
+                <td>Midterm Exam 1</td>
+                <td>20%</td>
+              </tr>
+              <tr>
+                <td>Midterm Exam 2</td>
+                <td>20%</td>
+              </tr>
+              <tr>
+                <td>Final Exam</td>
+                <td>40%</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3 id="asic-labs">ASIC Labs</h3>
+
+          <table>
+            <tbody>
+              <tr>
+                <td>Lab Reports</td>
+                <td>37.5%</td>
+              </tr>
+              <tr>
+                <td>Project</td>
+                <td>62.5%</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3 id="fpga-labs">FPGA Labs</h3>
+
+          <table>
+            <tbody>
+              <tr>
+                <td>Lab Checkoffs</td>
+                <td>25%</td>
+              </tr>
+              <tr>
+                <td>Project</td>
+                <td>75%</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h2 id="cheating-policy">Cheating Policy</h2>
+
+          <ul>
+            <li>If you turn in someone else’s work as if it were your own, you are guilty of cheating.  This includes problem sets, answers on exams, lab exercise checks, project design, and any required course turn-in material.</li>
+            <li>Also, if you knowingly aid in cheating, you are guilty.</li>
+            <li>We have software that compares your submitted work to others.</li>
+            <li>However, it is okay to discuss with others lab exercises and the project (obviously, okay to work with project partner).  Okay to discuss homework with others.  But everyone must turn in their own work.</li>
+            <li>Do not post your work on public repositories like github (private o.k.)</li>
+            <li><strong>If we catch you cheating, you will get negative points on the assignment: It is better to not do the work than to cheat!   If it is a midterm exam, final exam, or final project, you get an F in the class.  All cases of cheating reported to the office of student conduct. </strong></li>
+          </ul>
+      </div>
+    </article>
+  </div>
+</main>
+</body>
+</html>
